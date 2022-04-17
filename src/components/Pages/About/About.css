@@ -1,0 +1,10 @@
+.img-container img{
+    border-radius: 50%;
+    height: 75vh;
+}
+.img-container{
+    border-radius: 50%;
+    text-align: center;
+    background-color: aquamarine;
+    width: auto;
+}
