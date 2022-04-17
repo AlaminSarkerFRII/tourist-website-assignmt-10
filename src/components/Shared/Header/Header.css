@@ -1,0 +1,14 @@
+.navbar-brand{
+    color: white ;
+    font-weight: bold;
+}
+
+.nav-item a {
+    color: white ;
+    font-size: 20px;
+    padding-right: 140px;
+    padding-left: 40px;
+}
+.nav-item {
+   margin-right: 40px;
+}

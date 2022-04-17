@@ -5,11 +5,14 @@ import CheckOut from "./components/Pages/CheckOut/CheckOut";
 import Home from "./components/Pages/Home/Home/Home";
 import Login from "./components/Pages/Login/Login/Login";
 import Register from "./components/Pages/Login/Register/Register";
+import Footer from "./components/Shared/Footer/Footer";
+import Header from "./components/Shared/Header/Header";
 import NotFound from "./components/Shared/NotFound/NotFound";
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
@@ -19,6 +22,7 @@ function App() {
         <Route path="/checkout" element={<CheckOut></CheckOut>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer />
     </>
   );
 }
