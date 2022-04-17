@@ -17,7 +17,7 @@ const Banner = () => {
         <Carousel.Item>
           <img className="d-block w-100" src={banner1} alt="First slide" />
           <Carousel.Caption>
-            <h3>First slide label</h3>
+            <h3>Best Moments you Can Enjoy</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -25,18 +25,16 @@ const Banner = () => {
           <img className="d-block w-100" src={banner2} alt="Second slide" />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Life is beautiful with nature</h3>
+            <p>sunset give you a best feelings everywhere </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100" src={banner3} alt="Third slide" />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>world is best for you </h3>
+            <p>world is best for you when you are staying in with nature.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

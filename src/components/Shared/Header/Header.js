@@ -5,7 +5,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-white bg-dark text-white ">
+      <nav className="navbar navbar-expand-lg navbar-white bg-dark ">
         <div className="container">
           <Link className="navbar-brand" to="/">
             Photography
@@ -19,7 +19,7 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"> </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
@@ -39,7 +39,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="#">
-                  Pricing
+                  About Me
                 </Link>
               </li>
               <li className="nav-item">
