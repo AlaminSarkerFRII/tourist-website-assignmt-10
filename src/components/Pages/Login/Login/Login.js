@@ -101,7 +101,7 @@ const Login = () => {
       </Form>
       {errorElement}
       <p className="mt-3 fw-bold text-center">
-        New to Genius Car ?
+        Don't have an account ?
         <Link
           to="/register"
           onClick={navigateToRegister}

@@ -8,14 +8,15 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
-      <div className="info ms-3">
+    <footer className="footer-container mt-5">
+      <div className="info ms-3 ">
         <h2>
           Visited <cite className="text-danger"> Alamin Photography </cite>
         </h2>
       </div>
       <div className="social-link">
         <h2>link</h2>
+        <Link to="/home">Home</Link>
         <Link to="/about"> About Me </Link>
         <Link to="/blog"> Blogs</Link>
       </div>
