@@ -1,76 +1,77 @@
 import React from "react";
+import "./CheckOut.css";
 
 const CheckOut = () => {
   return (
-    <div>
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
+    <div className="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div className="form-info col md-5">
+          <form>
             <input
               type="email"
               class="form-control"
               id="inputEmail4"
               placeholder="Email"
             />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
             <input
               type="password"
               class="form-control"
               id="inputPassword4"
               placeholder="Password"
             />
-          </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="address"
+            />
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="inputZip"
+                placeholder="phone"
+              />
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">
+              Add Shipping
+            </button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress"
-            placeholder="1234 Main St"
-          />
+        <div className="col-md-7">
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_5tkzkblw.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="Apartment, studio, or floor"
-          />
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" />
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip" />
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck" />
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Sign in
-        </button>
-      </form>
+      </div>
     </div>
   );
 };

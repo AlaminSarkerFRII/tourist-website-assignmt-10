@@ -18,8 +18,8 @@ const Header = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-white bg-dark ">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            Photography
+          <Link className="navbar-brand text-uppercase" to="/">
+            Alamin Photography
           </Link>
           <button
             className="navbar-toggler"
@@ -44,7 +44,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="home#service">
+                <Link className="nav-link" to="/home#service">
                   Service
                 </Link>
               </li>

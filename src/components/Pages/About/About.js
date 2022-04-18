@@ -8,7 +8,8 @@ const About = () => {
       <div className="row g-5 mt-5 d-flex  align-items-center">
         <div className="col-md-6 col-lg-9 col-sm-12 w-50 mx-auto">
           <h1 className="">
-            Hi !! I'm <span className="text-info fw-bold">Alamin Sarker</span>
+            Hi !! I'm <br />
+            <span className="text-info fw-bold">Alamin Sarker</span>
           </h1>
           <p className="fs-5">
             I want be world best web developer and good at problem solving . For
@@ -25,6 +26,7 @@ const About = () => {
             : 30am , its so difficult to mange this but i'm trying to my best .
             <cite>In Sha Allah , I will be Success very soon.</cite>
           </p>
+          <button className="btn btn-info">Read More....</button>
         </div>
         <div className="img-container col-md-6 col-lg-3 col-sm-12 mt-5">
           <img src={myPic} alt="" />
