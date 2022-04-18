@@ -9,6 +9,7 @@ import SocialLogin from "../SocialLogin/SocialLogin";
 import auth from "../../../../firebase.init";
 import Loading from "../../../Shared/Loading/Loading";
 import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   // useref
@@ -30,6 +31,7 @@ const Login = () => {
 
   if (error) {
     errorElement = <p className="text-danger">Error: {error?.message}</p>;
+    toast.error("Login Failed");
   }
 
   // loading
@@ -41,6 +43,7 @@ const Login = () => {
   // if user created
   if (user) {
     navigate("/home");
+    toast.success("Login Successful");
   }
 
   // handle submit

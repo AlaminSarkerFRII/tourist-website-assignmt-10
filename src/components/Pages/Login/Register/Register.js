@@ -4,6 +4,7 @@ import {
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import auth from "../../../../firebase.init";
 import Loading from "../../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -36,17 +37,12 @@ const Register = () => {
   // handle register form
   const handleRegister = async (event) => {
     event.preventDefault();
-    // console.log(event.target); // full formta accesshobe
-    // console.log(event.target.email); // email k access kora
-    // console.log(event.target.email.value); // email er value ta k access kora
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
-    // const agree = event.target.terms.checked; [ 1ta system]
-
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
-    console.log("Updated profile");
+    toast.success("Register Succcess");
     navigate("/home");
   };
   return (
