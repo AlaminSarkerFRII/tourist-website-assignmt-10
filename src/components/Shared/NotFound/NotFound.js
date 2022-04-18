@@ -1,9 +1,13 @@
 import React from "react";
+import imgs from "../../Images/404.jpg";
+import "./NotFound.css";
 
 const NotFound = () => {
   return (
-    <div>
-      <h2>Not Found Page !! 404</h2>
+    <div className="container">
+      <div>
+        <img src={imgs} alt="" />
+      </div>
     </div>
   );
 };
